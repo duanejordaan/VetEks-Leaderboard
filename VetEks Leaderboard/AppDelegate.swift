@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  VetEks Leaderboard
+//  InstagramClone
 //
-//  Created by Duane Jordaan on 2017/07/08.
-//  Copyright © 2017 Duane Jordaan. All rights reserved.
+//  Created by The Zero2Launch Team on 11/28/16.
+//  Copyright © 2016 The Zero2Launch Team. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+        // change color of tab bar's items
+        UITabBar.appearance().tintColor = .black
         return true
     }
 
