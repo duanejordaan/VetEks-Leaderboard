@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		DBB620D41F10DC8700DC32DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB620D31F10DC8700DC32DF /* AppDelegate.swift */; };
-		DBB620D61F10DC8700DC32DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB620D51F10DC8700DC32DF /* ViewController.swift */; };
-		DBB620D91F10DC8700DC32DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB620D71F10DC8700DC32DF /* Main.storyboard */; };
 		DBB620DB1F10DC8700DC32DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB620DA1F10DC8700DC32DF /* Assets.xcassets */; };
 		DBB620DE1F10DC8700DC32DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB620DC1F10DC8700DC32DF /* LaunchScreen.storyboard */; };
+		DBB620E71F10DD2A00DC32DF /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB620E61F10DD2A00DC32DF /* config.swift */; };
+		DBB620E91F10DE7300DC32DF /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB620E81F10DE7300DC32DF /* Start.storyboard */; };
+		DBB620EB1F10E11900DC32DF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB620EA1F10E11900DC32DF /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBB620D01F10DC8700DC32DF /* VetEks Leaderboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VetEks Leaderboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB620D31F10DC8700DC32DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBB620D51F10DC8700DC32DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DBB620D81F10DC8700DC32DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBB620DA1F10DC8700DC32DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBB620DD1F10DC8700DC32DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBB620DF1F10DC8700DC32DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB620E61F10DD2A00DC32DF /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		DBB620E81F10DE7300DC32DF /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Start.storyboard; path = ../Start.storyboard; sourceTree = "<group>"; };
+		DBB620EA1F10E11900DC32DF /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		DBB620D21F10DC8700DC32DF /* VetEks Leaderboard */ = {
 			isa = PBXGroup;
 			children = (
+				DBB620E51F10DD1800DC32DF /* Model */,
 				DBB620D31F10DC8700DC32DF /* AppDelegate.swift */,
-				DBB620D51F10DC8700DC32DF /* ViewController.swift */,
-				DBB620D71F10DC8700DC32DF /* Main.storyboard */,
+				DBB620EA1F10E11900DC32DF /* SignInViewController.swift */,
+				DBB620E81F10DE7300DC32DF /* Start.storyboard */,
 				DBB620DA1F10DC8700DC32DF /* Assets.xcassets */,
 				DBB620DC1F10DC8700DC32DF /* LaunchScreen.storyboard */,
 				DBB620DF1F10DC8700DC32DF /* Info.plist */,
 			);
 			path = "VetEks Leaderboard";
+			sourceTree = "<group>";
+		};
+		DBB620E51F10DD1800DC32DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBB620E61F10DD2A00DC32DF /* config.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +136,7 @@
 			files = (
 				DBB620DE1F10DC8700DC32DF /* LaunchScreen.storyboard in Resources */,
 				DBB620DB1F10DC8700DC32DF /* Assets.xcassets in Resources */,
-				DBB620D91F10DC8700DC32DF /* Main.storyboard in Resources */,
+				DBB620E91F10DE7300DC32DF /* Start.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +147,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBB620D61F10DC8700DC32DF /* ViewController.swift in Sources */,
+				DBB620E71F10DD2A00DC32DF /* config.swift in Sources */,
 				DBB620D41F10DC8700DC32DF /* AppDelegate.swift in Sources */,
+				DBB620EB1F10E11900DC32DF /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DBB620D71F10DC8700DC32DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBB620D81F10DC8700DC32DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DBB620DC1F10DC8700DC32DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
